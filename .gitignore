@@ -1,0 +1,32 @@
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 临时 / 损坏 / 备份（不应入库）
+*.tmp
+*.bak
+*.corrupt
+*.old
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 本地产出（交付物在 output/，不随技能源码入库）
+data.json
+data.json.bak
+dashboard.html
+财务经营分析报告.*
+会计分析报告_顶级团队.md
+审计底稿_*.xlsx
+finance-bi-dashboard_打包*.zip
+
+# 本地验证用临时目录（软链到真实账套，绝不入库）
+data/
+output/
+
+# 校验台运行产物（锁文件 / 进度日志，绝不入库）
+.validate.lock
+output/validate_progress.log
